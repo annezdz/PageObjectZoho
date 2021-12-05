@@ -114,12 +114,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
                 <configuration>
-<!--                    <testFailureIgnore>false</testFailureIgnore>-->
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>-->
-
-<!--                        </suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>
+                            C:/Users/anicolle/eclipse-workspace/Java Masterclass/PageObjectModelBasics/src/resources/runner/testng.xml
+                        </suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
 
@@ -144,7 +144,7 @@
     </build>
 
     <groupId>com.w2a</groupId>
-    <artifactId>DataDrivenFramework</artifactId>
+    <artifactId>PageObjectModelBasics</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

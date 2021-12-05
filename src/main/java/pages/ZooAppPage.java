@@ -1,13 +1,12 @@
 package pages;
 
 import base.Page;
-import crm.CRMHomePage;
+import pages.crm.CRMHomePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.FileNotFoundException;
 
 public class ZooAppPage extends Page {
-
 
     public void goToClick(){
         if(driver.getPageSource().contains("Limite de início de sessão quase atingido")){
@@ -28,9 +27,9 @@ public class ZooAppPage extends Page {
                 (By.xpath("//span[@class='_logo-mail _logo-x96 zod-app-logo']")).click();
     }
 
-    public CRMHomePage goToCRM(){
+    public CRMHomePage goToCRM() {
         driver.findElement(By.
-                xpath("//span[@class='_logo-crm _logo-x96 zod-app-logo']")).click();
+                xpath("//span[@class='_logo-pages.crm _logo-x96 zod-app-logo']")).click();
         return new CRMHomePage();
     }
 }

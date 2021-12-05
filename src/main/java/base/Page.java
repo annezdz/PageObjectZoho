@@ -36,7 +36,6 @@ import java.util.concurrent.TimeUnit;
 public class Page {
 
     public static WebDriver driver;
-    public static TopMenu menu;
     public static Properties config = new Properties();
     public static Properties OR = new Properties();
     public static FileInputStream fis;
@@ -47,8 +46,10 @@ public class Page {
     public ExtentReports reports = ExtentManager.getInstance();
     public static ExtentTest test;
     public static String browser;
+    public static TopMenu menu;
 
-    public Page() throws FileNotFoundException {
+
+    public Page() {
         if(driver == null){
 
             FileInputStream fileInputStream =
@@ -56,7 +57,8 @@ public class Page {
             try {
                 fileInputStream = new FileInputStream
                         (System.getProperty("user.dir") +
-                                "\\src\\main\\resources\\properties\\Config.properties");
+                                "\\src\\test\\java\\properties\\Config.properties");
+
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
@@ -69,7 +71,7 @@ public class Page {
 
             try {
                 fileInputStream = new FileInputStream(System.getProperty("user.dir") +
-                        "\\src\\main\\resources\\properties\\OR.properties");
+                        "\\src\\test\\java\\properties\\OR.properties");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
@@ -80,7 +82,16 @@ public class Page {
                 e.printStackTrace();
             }
 
-            // Jenkins browser filter configuration
+            //Jenkins Browser filter configuration
+            if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+
+                browser = System.getenv("browser");
+            } else {
+
+                browser = config.getProperty("browser");
+            }
+
+            config.setProperty("browser", browser);
 
             switch (config.getProperty("browser")){
                 case "firefox":
@@ -156,19 +167,23 @@ public class Page {
             ChromeOptions ops = new ChromeOptions();
             ops.addArguments("--disable-notifications");
 
-            System.setProperty("webdriver.chrome.driver",
-                    "src\\main\\resources\\executables\\chromedriver.exe");
-            driver = new ChromeDriver(ops);
-
-            driver.get("https://www.zoho.com/pt-br/");
+            //driver.get("https://www.zoho.com/pt-br/");
+            driver.get(config.getProperty("testsiteurl"));
+            log.debug("Navigated to : " + config.getProperty("testsiteurl"));
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().timeouts()
+                    .implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
+                            TimeUnit.SECONDS);
             menu = new TopMenu(driver);
         }
     }
 
+    public static void quit(){
+        driver.quit();
+    }
+
     // Common Keywords
-    
+
     public void click(String locator){
         if(locator.endsWith("_CSS"))
         {

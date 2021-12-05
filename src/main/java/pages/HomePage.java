@@ -4,6 +4,8 @@ import base.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.io.FileNotFoundException;
+
 public class HomePage extends Page {
 
 
@@ -15,8 +17,8 @@ public class HomePage extends Page {
         driver.findElement(By.xpath("//form[@id='login']//button[@id='nextbtn']")).click();
     }
 
-    public LoginPage goToLogin(){
-        driver.findElement(By.xpath("//a[@class='zh-login']")).click();
+    public LoginPage goToLogin() {
+       click("loginLink_XPATH");
         return new LoginPage();
     }
 
