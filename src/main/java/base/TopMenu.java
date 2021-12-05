@@ -1,8 +1,10 @@
 package base;
 
-import accounts.AccountsPage;
+import pages.crm.AccountsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import java.io.FileNotFoundException;
 
 public class TopMenu {
 
@@ -24,7 +26,7 @@ public class TopMenu {
 
     }
 
-    public AccountsPage goToAccounts(){
+    public AccountsPage goToAccounts()  {
         driver.findElement(By.xpath("//a[normalize-space()='Contas']")).click();
         return new AccountsPage();
     }

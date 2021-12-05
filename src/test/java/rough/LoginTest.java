@@ -1,26 +1,21 @@
 package rough;
 
-import accounts.AccountsPage;
-import accounts.CreateAccountPage;
+import pages.crm.AccountsPage;
+import pages.crm.CreateAccountPage;
 import base.Page;
-import crm.CRMHomePage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.ProfilesIni;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ZooAppPage;
 
-import java.util.concurrent.TimeUnit;
+import java.io.FileNotFoundException;
 
 public class LoginTest {
 
 
     public static WebDriver driver;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         HomePage home = new HomePage();
         LoginPage login = home.goToLogin();

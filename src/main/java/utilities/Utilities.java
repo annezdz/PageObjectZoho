@@ -12,6 +12,7 @@ import org.testng.annotations.DataProvider;
 
 import javax.print.DocFlavor;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
@@ -20,6 +21,9 @@ public class Utilities extends Page {
 
     public static String screenshotPath;
     public static String screenshotName;
+
+    public Utilities() throws FileNotFoundException {
+    }
 
 
     public static void captureScreenshot() throws IOException {
