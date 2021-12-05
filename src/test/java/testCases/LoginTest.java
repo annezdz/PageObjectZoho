@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
     public void loginTest() throws InterruptedException {
         HomePage home = new HomePage();
         LoginPage login = home.goToLogin();
-      //  ZooAppPage zp = login.doLogin("annezdz@hotmail.com","anne280785");
+        ZooAppPage zp = login.doLogin("annezdz@hotmail.com","anne280785");
        // zp.goToCRM();
     }
 }

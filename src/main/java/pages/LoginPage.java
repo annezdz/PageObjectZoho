@@ -14,7 +14,7 @@ public class LoginPage extends Page {
     public ZooAppPage doLogin(String username, String password){
 
         type("email_XPATH",username);
-        //click("maisOpcoes_XPATH");
+        click("seguinte_XPATH");
         type("senha_XPATH", password);
 //
 //        WebDriverWait wait = new WebDriverWait(driver, 10L);
