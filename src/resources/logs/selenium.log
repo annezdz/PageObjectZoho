@@ -1,0 +1,9 @@
+09:25:39,627 DEBUG devpinoyLogger:67 - Config file loaded!
+09:25:39,633 DEBUG devpinoyLogger:80 - OR file loaded!
+09:25:41,896 DEBUG devpinoyLogger:131 - Chrome launched
+09:26:05,884 DEBUG devpinoyLogger:172 - Navigated to : https://www.zoho.com/pt-br/
+09:26:09,832 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("pt_BR", UTF-8, parsed); will try to load it.
+09:26:09,833 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt_BR.ftl"): Not found
+09:26:09,837 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt.ftl"): Not found
+09:26:09,839 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+09:26:09,839 DEBUG cache:45 - Loading template for "Extent.ftl"("pt_BR", UTF-8, parsed) from "jar:file:/C:/Users/anicolle/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

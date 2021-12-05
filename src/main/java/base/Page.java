@@ -167,10 +167,6 @@ public class Page {
             ChromeOptions ops = new ChromeOptions();
             ops.addArguments("--disable-notifications");
 
-            System.setProperty("webdriver.chrome.driver",
-                    "src\\main\\resources\\executables\\chromedriver.exe");
-            driver = new ChromeDriver(ops);
-
             //driver.get("https://www.zoho.com/pt-br/");
             driver.get(config.getProperty("testsiteurl"));
             log.debug("Navigated to : " + config.getProperty("testsiteurl"));
