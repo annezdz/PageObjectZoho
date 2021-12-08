@@ -18,8 +18,7 @@ public class ZooAppPage extends Page {
     }
 
     public void goToCalendar(){
-        driver.findElement
-                (By.xpath("//span[@class='_logo-calendar _logo-x96 zod-app-logo']")).click();
+       click("goToCalendar_XPATH");
     }
 
     public void goToMail(){
@@ -28,8 +27,9 @@ public class ZooAppPage extends Page {
     }
 
     public CRMHomePage goToCRM() {
-        driver.findElement(By.
-                xpath("//span[@class='_logo-pages.crm _logo-x96 zod-app-logo']")).click();
+//        driver.findElement(By.
+//                xpath("//span[@class='_logo-pages.crm _logo-x96 zod-app-logo']")).click();
+        click("goToCRM_XPATH");
         return new CRMHomePage();
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object Model]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Create Calendar Test(failed)" verbose="0">
+    <classes>
+      <class name="testCases.CalendarTest">
+        <methods>
+          <include name="calendarTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.CalendarTest -->
+    </classes>
+  </test> <!-- Create Calendar Test(failed) -->
+</suite> <!-- Failed suite [Page Object Model] -->

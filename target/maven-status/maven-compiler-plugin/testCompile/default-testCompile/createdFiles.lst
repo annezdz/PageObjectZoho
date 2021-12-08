@@ -1,3 +1,5 @@
-rough\LoginTest.class
-testCases\LoginTest.class
 testCases\BaseTest.class
+rough\LoginTest.class
+testCases\CalendarTest.class
+testCases\CreateAccountTest.class
+testCases\LoginTest.class

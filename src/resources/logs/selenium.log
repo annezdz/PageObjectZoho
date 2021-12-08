@@ -1,9 +1,24 @@
-09:25:39,627 DEBUG devpinoyLogger:67 - Config file loaded!
-09:25:39,633 DEBUG devpinoyLogger:80 - OR file loaded!
-09:25:41,896 DEBUG devpinoyLogger:131 - Chrome launched
-09:26:05,884 DEBUG devpinoyLogger:172 - Navigated to : https://www.zoho.com/pt-br/
-09:26:09,832 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("pt_BR", UTF-8, parsed); will try to load it.
-09:26:09,833 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt_BR.ftl"): Not found
-09:26:09,837 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt.ftl"): Not found
-09:26:09,839 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-09:26:09,839 DEBUG cache:45 - Loading template for "Extent.ftl"("pt_BR", UTF-8, parsed) from "jar:file:/C:/Users/anicolle/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:59:49,590 DEBUG devpinoyLogger:68 - Config file loaded!
+21:59:49,593 DEBUG devpinoyLogger:81 - OR file loaded!
+21:59:52,263 DEBUG devpinoyLogger:132 - Chrome launched
+22:00:16,330 DEBUG devpinoyLogger:173 - Navigated to : https://www.zoho.com/pt-br/
+22:00:19,614 DEBUG devpinoyLogger:202 - Clicking on : loginLink_XPATH
+22:00:19,720 DEBUG devpinoyLogger:237 - Typing in :email_XPATH and entered values : annezdz@hotmail.com
+22:00:19,771 DEBUG devpinoyLogger:202 - Clicking on : seguinte_XPATH
+22:00:20,386 DEBUG devpinoyLogger:237 - Typing in :senha_XPATH and entered values : anne280785
+22:00:20,423 DEBUG devpinoyLogger:202 - Clicking on : iniciarSessaoBtn_XPATH
+22:00:29,856 DEBUG devpinoyLogger:202 - Clicking on : goToCalendar_XPATH
+22:00:29,874 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("pt_BR", UTF-8, parsed); will try to load it.
+22:00:29,875 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt_BR.ftl"): Not found
+22:00:29,876 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt.ftl"): Not found
+22:00:29,877 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+22:00:29,877 DEBUG cache:45 - Loading template for "Extent.ftl"("pt_BR", UTF-8, parsed) from "jar:file:/C:/Users/anicolle/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+22:00:30,234 DEBUG devpinoyLogger:202 - Clicking on : cell_XPATH
+22:00:30,290 DEBUG devpinoyLogger:237 - Typing in :titulo_XPATH and entered values : Reuniao
+22:00:30,367 DEBUG devpinoyLogger:271 - Selecting from drop down : selectCalendar_XPATH and value is annezdz
+22:00:30,425 DEBUG devpinoyLogger:202 - Clicking on : btnCriar_XPATH
+22:00:47,013 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("pt_BR", UTF-8, parsed); will try to load it.
+22:00:47,014 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt_BR.ftl"): Not found
+22:00:47,014 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_pt.ftl"): Not found
+22:00:47,014 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+22:00:47,015 DEBUG cache:45 - Loading template for "Extent.ftl"("pt_BR", UTF-8, parsed) from "jar:file:/C:/Users/anicolle/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

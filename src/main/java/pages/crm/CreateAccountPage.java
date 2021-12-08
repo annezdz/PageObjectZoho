@@ -10,6 +10,6 @@ public class CreateAccountPage extends Page {
 
 
     public void createAccountPage(String name){
-        driver.findElement(By.xpath("//input[@id='Crm_Accounts_ACCOUNTNAME']")).sendKeys(name);
+       type("accountName_XPATH",name);
     }
 }

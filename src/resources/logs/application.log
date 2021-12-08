@@ -1,4 +1,14 @@
-05/12/2021 09:25:39 devpinoyLogger Config file loaded!
-05/12/2021 09:25:39 devpinoyLogger OR file loaded!
-05/12/2021 09:25:41 devpinoyLogger Chrome launched
-05/12/2021 09:26:05 devpinoyLogger Navigated to : https://www.zoho.com/pt-br/
+07/12/2021 21:59:49 devpinoyLogger Config file loaded!
+07/12/2021 21:59:49 devpinoyLogger OR file loaded!
+07/12/2021 21:59:52 devpinoyLogger Chrome launched
+07/12/2021 22:00:16 devpinoyLogger Navigated to : https://www.zoho.com/pt-br/
+07/12/2021 22:00:19 devpinoyLogger Clicking on : loginLink_XPATH
+07/12/2021 22:00:19 devpinoyLogger Typing in :email_XPATH and entered values : annezdz@hotmail.com
+07/12/2021 22:00:19 devpinoyLogger Clicking on : seguinte_XPATH
+07/12/2021 22:00:20 devpinoyLogger Typing in :senha_XPATH and entered values : anne280785
+07/12/2021 22:00:20 devpinoyLogger Clicking on : iniciarSessaoBtn_XPATH
+07/12/2021 22:00:29 devpinoyLogger Clicking on : goToCalendar_XPATH
+07/12/2021 22:00:30 devpinoyLogger Clicking on : cell_XPATH
+07/12/2021 22:00:30 devpinoyLogger Typing in :titulo_XPATH and entered values : Reuniao
+07/12/2021 22:00:30 devpinoyLogger Selecting from drop down : selectCalendar_XPATH and value is annezdz
+07/12/2021 22:00:30 devpinoyLogger Clicking on : btnCriar_XPATH

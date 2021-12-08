@@ -19,6 +19,7 @@ import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -198,6 +199,7 @@ public class Page {
             driver.findElement(By.id(OR.getProperty(locator))).click();
         }
 
+        log.debug("Clicking on : " + locator);
         test.log(LogStatus.INFO, "Clicking on : " + locator);
     }
 
@@ -220,7 +222,7 @@ public class Page {
         }
     }
 
-    public void type(String locator, String value) {
+    public static void type(String locator, String value) {
         if(locator.endsWith("_CSS")){
             driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
         }
@@ -232,13 +234,21 @@ public class Page {
         {
             driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
         }
+        log.debug("Typing in :" + locator + " and entered values : " + value);
         test.log(LogStatus.INFO, "Typing in : " + locator + " and entered values " + value);
 
     }
 
+    public static WebDriverWait waitUntil(String locator){
+        WebDriverWait webDriverWait = new WebDriverWait(driver,30);
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+        return webDriverWait;
+    }
+
+
     static WebElement dropdown;
 
-    public void select(String locator, String value){
+    public static void select(String locator, String value){
         if(locator.endsWith("_CSS")){
             dropdown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
         }
@@ -258,8 +268,8 @@ public class Page {
                 select.selectByVisibleText(value);
             }
         }
-
-        test.log(LogStatus.INFO, "Select from drop down: " + locator + " and value is " + value);
+        log.debug("Selecting from drop down : " + locator + " and value is " + value);
+        test.log(LogStatus.INFO, "Selecting from drop down: " + locator + " and value is " + value);
 
     }
 
@@ -271,4 +281,6 @@ public class Page {
             return false;
         }
     }
+
+
 }

@@ -3,6 +3,7 @@ pages\LoginPage.class
 utilities\ExtentManager.class
 pages\HomePage.class
 listeners\CustomListeners.class
+pages\crm\CalendarPage.class
 utilities\ExcelReader.class
 pages\ZooAppPage.class
 pages\crm\CreateAccountPage.class

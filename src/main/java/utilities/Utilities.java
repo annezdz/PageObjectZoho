@@ -22,9 +22,6 @@ public class Utilities extends Page {
     public static String screenshotPath;
     public static String screenshotName;
 
-    public Utilities() throws FileNotFoundException {
-    }
-
 
     public static void captureScreenshot() throws IOException {
 

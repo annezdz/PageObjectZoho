@@ -13,4 +13,20 @@
             </class>
         </classes>
     </test>
+
+    <test verbose="2" preserve-order="true"
+          name="Create Account Test">
+        <classes>
+            <class name="testCases.CreateAccountTest">
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true"
+          name="Create Calendar Test">
+        <classes>
+            <class name="testCases.CalendarTest">
+            </class>
+        </classes>
+    </test>
 </suite>
