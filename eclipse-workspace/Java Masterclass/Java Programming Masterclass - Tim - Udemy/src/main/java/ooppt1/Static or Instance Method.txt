@@ -1,0 +1,7 @@
+Should a method be static ?
+Does it use any fields (instance variables) or instance methods ?
+
+If YES it shloud problably be an instance method
+
+If NO, it should problably be a static method
+
