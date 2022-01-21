@@ -68,6 +68,9 @@ public class Main {
         String targetFile = "C:\\Users\\anicolle\\eclipse-workspace\\out\\summary.csv";
 
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(targetFile))) {
+            bufferedWriter.write("name" + "," + "price" + "," + "total");
+            bufferedWriter.newLine();
+
             for(Product item : list) {
                 bufferedWriter.write(item.getName() + "," + String.format("%.2f%n", item.total()));
             }
